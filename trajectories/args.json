@@ -1,0 +1,144 @@
+{
+    "design": true,
+    "sampler": "two_seqs",
+    "F": 1,
+    "add_weight_every_n": 1,
+    "argmax_seq": false,
+    "cautious": false,
+    "checkpoint": "/pasteur/appa/scratch/dvu/github/SLIMshot/model/SEQDIFF_230205_dssp_hotspots_25mask_EQtasks_mod30.pt",
+    "clamp_seqout": true,
+    "d_t1d": 29,
+    "dump_pdb": true,
+    "dump_trb": false,
+    "frac_seq_to_weight": 0.0,
+    "helix_bias": 0.0,
+    "loop_bias": 0.0,
+    "loop_design": false,
+    "min_decoding_distance": 15,
+    "n_cycle": 4,
+    "noise_schedule": "sqrt",
+    "one_weight_per_position": false,
+    "sampling_temp": 1,
+    "save_all_steps": false,
+    "save_best_plddt": true,
+    "scheduled_str_cond": false,
+    "softmax_seqout": false,
+    "start_num": 0,
+    "strand_bias": 0.0,
+    "struc_cond_sc": false,
+    "symmetry": 1,
+    "symmetry_cap": 0,
+    "temperature": 0.1,
+    "tmpl_conf": "1",
+    "trb": null,
+    "sample_distribution": "normal",
+    "sample_distribution_gmm_means": [
+        0
+    ],
+    "sample_distribution_gmm_variances": [
+        1
+    ],
+    "save_args": true,
+    "potentials": null,
+    "overwrite": true,
+    "num_designs": 5000,
+    "save_pdb_every_step": false,
+    "print_trajectory": false,
+    "print_alphafold_stats": false,
+    "mixing_schedule": "damped_oscillation",
+    "frequency": 0.025,
+    "threshold_pltdd": 0.75,
+    "T": 60,
+    "af_params_dir": "/pasteur/appa/scratch/dvu/github/SLIMshot/params",
+    "model_path": "v_48_020",
+    "mpnn_weights": "soluble",
+    "relax_pdb": "pyrosetta",
+    "dssp_path": "/pasteur/appa/scratch/dvu/github/SLIMshot/utils/binary/dssp",
+    "dalphaball_path": "/pasteur/appa/scratch/dvu/github/SLIMshot/utils/binary/DAlphaBall.gcc",
+    "validation": true,
+    "num_recycles": 8,
+    "iptm_threshold": 0.7,
+    "models": [
+        0,
+        1,
+        2,
+        3,
+        4
+    ],
+    "redesign_binder": true,
+    "sampling_temp_mpnn": 0.1,
+    "num_seqs": 5,
+    "omit_AAs": "C",
+    "present_AAs": "Y, W",
+    "force_reject_AA": true,
+    "RMSD_binder": 3.5,
+    "ptm_threshold": 0.7,
+    "models_binder": [
+        0,
+        1
+    ],
+    "RMSD_complex_redesign": 3.5,
+    "pyrosetta_filter": true,
+    "num_seqs_per_backbone": 2,
+    "pyrosetta_filters": [
+        {
+            "surface_hydrophobicity": [
+                0,
+                0.35
+            ]
+        },
+        {
+            "interface_dG": [
+                -100,
+                -30
+            ]
+        },
+        {
+            "i_plddt": [
+                0.75,
+                1
+            ]
+        },
+        {
+            "num_clashes": [
+                0,
+                3
+            ]
+        },
+        {
+            "interface_sc": [
+                0.5,
+                1
+            ]
+        },
+        {
+            "interface_delta_unsat_hbonds": [
+                0,
+                3
+            ]
+        },
+        {
+            "plddt": [
+                70,
+                100
+            ]
+        }
+    ],
+    "out_dir": "../outputs/MB/20250430_4",
+    "design_name": "2025114_MM",
+    "generate_topo_random": false,
+    "a_secondary_structure": "XHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHHX",
+    "b_secondary_structure": "XHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHXLLLXHHHHHHHHHHHHHHHHHHHHHHHHX",
+    "a_sequence": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXGSGGIGAVLKVLTTGLPALISWIKRKRQQ",
+    "b_sequence": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXGSGGIGAVLKVLTTGLPALISWIKRKRQQ",
+    "a_sequence_motif": "GIGAVLKVLTTGLPALISWIKRKRQQ",
+    "b_sequence_motif": "GIGAVLKVLTTGLPALISWIKRKRQQ",
+    "a_position_motif": "C-ter",
+    "b_position_motif": "C-ter",
+    "a_linker_length": 1,
+    "b_linker_length": 1,
+    "num_final_binders": 100,
+    "batch_size": 20,
+    "batch_name": "0000_0019",
+    "batch_idx": 0
+}
